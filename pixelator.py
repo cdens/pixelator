@@ -217,7 +217,7 @@ def pixelator_driver(sourceimage,imagedir,width_images,height_images,targetpixwi
     logging.debug('Source directory: ' + imagedir)
     logging.debug('Target final image size (individual images): '+ str(width_images) + 'x' + str(height_images))
     logging.debug('Target final image size (pixels): '+ str(targetpixwidth) + 'x' + str(targetpixheight))
-    logging.debug('Settings: method='+method + ', usemultipletimes=',usemultipletimes)
+    logging.debug('Settings: usemultipletimes=',usemultipletimes)
 
     #resize input image to big pixels
     newsize = (width_images,height_images)
@@ -272,10 +272,10 @@ def example_driver():
     outfile = 'Datasets/test_landscape.jpeg'
 
     #input dimensions/resolution for mosaic
-    width_images = 160 #how many tiles wide/tall the mosaic should be
-    height_images = 120
-    targetpixwidth = 2000
-    targetpixheight = 1500
+    width_images = 200 #how many tiles wide/tall the mosaic should be
+    height_images = 150
+    targetpixwidth = 2400
+    targetpixheight = 1800
 
     #settings for mosaic generation
     usemultipletimes = True #if this is true, the same photo can be used multiple times (otherwise it can't)
